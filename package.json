@@ -1,10 +1,14 @@
 {
-  "name": "example_lib",
+  "name": "react-smart-picture",
   "version": "1.0.0",
-  "description": "fff",
-  "author": "Tonya L.",
+  "description": "Smarter image component that has blured preview and posibility to use webp image type and different images according to device width.",
+  "author": "Antonina Lebedeva",
   "license": "MIT",
-  "repository": "Tonya L./example_lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-all-means/react-smart-picture.git"
+  },
+  "homepage": "https://github.com/by-all-means/react-smart-picture#readme",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -12,7 +16,18 @@
     "node": ">=8",
     "npm": ">=5"
   },
+  "keywords": [
+    "picture",
+    "image",
+    "load",
+    "smart",
+    "blur",
+    "lazy-load",
+    "lazy"
+  ],
   "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
@@ -21,21 +36,26 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-intersection-observer": "^8.24.1"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react-dom": "^15.0.0 || ^16.0.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
     "@types/jest": "^23.1.5",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "@types/styled-components": "^4.1.18",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
+    "prettier": "^1.18.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "^2.16.0",
@@ -47,7 +67,10 @@
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-url": "^1.4.0",
-    "typescript": "^2.8.3"
+    "styled-components": "^4.3.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
   },
   "files": [
     "dist"
