@@ -1,14 +1,14 @@
 {
-  "name": "react-smart-picture",
+  "name": "react-boosted-image",
   "version": "1.0.0",
   "description": "Smarter image component that has blured preview and posibility to use webp image type and different images according to device width.",
   "author": "Antonina Lebedeva",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/by-all-means/react-smart-picture.git"
+    "url": "git+https://github.com/by-all-means/react-boosted-image.git"
   },
-  "homepage": "https://github.com/by-all-means/react-smart-picture#readme",
+  "homepage": "https://github.com/by-all-means/react-boosted-image#readme",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -21,9 +21,12 @@
     "image",
     "load",
     "smart",
+    "boosted",
     "blur",
     "lazy-load",
-    "lazy"
+    "lazy",
+    "webp",
+    "media query"
   ],
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
@@ -34,7 +37,9 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react-intersection-observer": "^8.24.1"
@@ -46,17 +51,27 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "@svgr/rollup": "^2.4.1",
     "@types/jest": "^23.1.5",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "@types/storybook__react": "^4.0.2",
     "@types/styled-components": "^4.1.18",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-runtime": "^6.26.0",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "prettier": "^1.18.2",
     "react": "^16.4.1",
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "^2.16.0",
     "rollup": "^0.62.0",

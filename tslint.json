@@ -9,7 +9,11 @@
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "no-empty-interface": false,
-    "variable-name": false
+    "variable-name": false,
+    "no-empty": [
+      true,
+      "allow-empty-functions"
+    ]
   },
   "rulesDirectory": []
 }

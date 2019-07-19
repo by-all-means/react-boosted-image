@@ -4,6 +4,24 @@
 
 [![NPM](https://img.shields.io/npm/v/example_lib.svg)](https://www.npmjs.com/package/react-smart-picture) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Features
+
+- **Blured** preview image [optional]
+- Provide a **default preview** image
+- **Lazy** load mode [optional]
+- Support **webP** format [optional]
+- Support **fallback** for retarded Safari
+- You can define your own **breakpoints** and [optional]
+- **different** images for each **device** [optional]
+
+
+### Possible enhancements
+
+- Custom animation effect / css
+- Add support for videos
+- ...
+
+
 ## Install
 
 ```bash
@@ -15,7 +33,7 @@ npm install --save react-smart-picture
 ```tsx
 import * as React from 'react'
 
-import SmartImage from 'react-smart-picture'
+import { SmartImage } from 'react-smart-picture'
 
 class Example extends React.Component {
   render () {
@@ -35,6 +53,7 @@ class Example extends React.Component {
         }}
         width="640"
         height="540"
+        lazyMode={true}
       />
     )
   }
