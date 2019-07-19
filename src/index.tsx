@@ -4,7 +4,7 @@ import { WebpIsSupported } from "./helpers";
 import { useInView } from 'react-intersection-observer';
 import { DEFAULT_PREVIEW_IMG } from './default_preview_img';
 
-interface ISmartImage {
+interface IBoostedImage {
   alt: string;
   previewSrc?: string;
   sources: {
@@ -17,7 +17,7 @@ interface ISmartImage {
   lazyMode?: boolean;
 }
 
-const SmartImage: React.FC<ISmartImage> = ({
+const BoostedImage: React.FC<IBoostedImage> = ({
   previewSrc = DEFAULT_PREVIEW_IMG,
   ...p
 }) => {
@@ -86,4 +86,4 @@ const SmartImage: React.FC<ISmartImage> = ({
   );
 };
 
-export { SmartImage };
+export { BoostedImage };

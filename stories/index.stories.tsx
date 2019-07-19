@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { SmartImage } from '../src/index';
+import { BoostedImage } from '../src/index';
 
 const WithSizes = () => (
-  <SmartImage
+  <BoostedImage
     alt={"example"}
     sources={{
       breakpoints: [900],
@@ -22,5 +22,5 @@ const WithSizes = () => (
   />
 );
 
-storiesOf('SmartImage', module)
+storiesOf('BoostedImage', module)
   .add('with sizes (width x height)', () => <WithSizes />);

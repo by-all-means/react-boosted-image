@@ -33,12 +33,12 @@ npm install --save react-smart-picture
 ```tsx
 import * as React from 'react'
 
-import { SmartImage } from 'react-smart-picture'
+import { BoostedImage } from 'react-smart-picture'
 
 class Example extends React.Component {
   render () {
     return (
-      <SmartImage
+      <BoostedImage
         alt={"example"}
         sources={{
           breakpoints: [900],
