@@ -1,7 +1,7 @@
 {
   "name": "react-boosted-image",
   "version": "1.0.1",
-  "description": "Smarter image component that has blured preview and posibility to use webp image type and different images according to device width.",
+  "description": "Smarter image component that has a blurred preview and a possibility to use WebP image type. It can also adjust to a device width. Feel free to check it out!",
   "author": "Antonina Lebedeva",
   "license": "MIT",
   "repository": {
