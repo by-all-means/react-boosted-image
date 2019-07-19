@@ -1,24 +1,25 @@
 # React boosted image :muscle: :sunrise_over_mountains:
 
-> Smarter image component that has blured preview and posibility to use webp image type and different images according to device width.
+> Smarter image component that has a blurred preview and a possibility to use WebP image type. It can also adjust to a device width. Feel free to check it out!
+
 
 [![NPM](https://img.shields.io/npm/v/example_lib.svg)](https://www.npmjs.com/package/react-boosted-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Features
 
-- **Blured** preview image [optional]
+- **Blurred** preview image [optional]
 - Provide a **default preview** image
 - **Lazy** load mode [optional]
-- Support **webP** format [optional]
-- Support **fallback** for retarded Safari
-- You can define your own **breakpoints** and [optional]
-- **different** images for each **device** [optional]
+- **WebP** format support [optional]
+- **Fallback** for your "favourite" Safari :shit:
+- Custom **breakpoints** (media-query widths) [optional]
+- **Different** images for each **device** [optional]
 
 
 ### Possible enhancements
 
 - Custom animation effect / css
-- Add support for videos
+- Add video support
 - ...
 
 
