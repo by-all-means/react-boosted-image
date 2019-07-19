@@ -1,8 +1,8 @@
-# React smart picture
+# React boosted image :muscle: :sunrise_over_mountains:
 
 > Smarter image component that has blured preview and posibility to use webp image type and different images according to device width.
 
-[![NPM](https://img.shields.io/npm/v/example_lib.svg)](https://www.npmjs.com/package/react-smart-picture) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/example_lib.svg)](https://www.npmjs.com/package/react-boosted-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Features
 
@@ -25,7 +25,7 @@
 ## Install
 
 ```bash
-npm install --save react-smart-picture
+npm install --save react-boosted-image
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ npm install --save react-smart-picture
 ```tsx
 import * as React from 'react'
 
-import { BoostedImage } from 'react-smart-picture'
+import { BoostedImage } from 'react-boosted-image'
 
 class Example extends React.Component {
   render () {
@@ -60,6 +60,11 @@ class Example extends React.Component {
 }
 ```
 
+## Authors
+
+- [Antonina Lebedeva](https://github.com/lebtonya)
+- [Tomáš Uhrík](https://github.com/TomasUhrik)
+
 ## License
 
-MIT © [Antonina Lebedeva](https://github.com/lebtonya)
+MIT
