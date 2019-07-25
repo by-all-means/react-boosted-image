@@ -14,12 +14,12 @@ const ImgContainer = styled.div<IImgContainer>`
   overflow: hidden;
 `;
 
-interface IPlaceholderImg {
+interface IRealImg {
   show?: boolean;
   blured?: boolean;
 }
 
-const RealImg = styled.img<IPlaceholderImg>`
+const RealImg = styled.img<IRealImg>`
   position: absolute;
   opacity: 0;
   top: 0;

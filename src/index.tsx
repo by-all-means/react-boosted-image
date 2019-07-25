@@ -4,6 +4,9 @@ import { WebpIsSupported } from "./helpers";
 import { useInView } from 'react-intersection-observer';
 import { DEFAULT_PREVIEW_IMG } from './default_preview_img';
 
+// polyfill for Safari
+import 'intersection-observer';
+
 interface IBoostedImage {
   alt: string;
   previewSrc?: string;
